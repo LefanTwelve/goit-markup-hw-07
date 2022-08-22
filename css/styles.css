@@ -810,8 +810,6 @@ footer {
     left: 15px;
     transform: translateY(25%);
     display: inline-block;
-    width: 12px;
-    height: 12px;
     transition: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
