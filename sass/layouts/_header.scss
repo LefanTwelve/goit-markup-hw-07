@@ -123,21 +123,24 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contact__icons {
+            margin-bottom: -1px;
+            fill: var(--secondary-text);
+            fill: currentColor;
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    &:hover,
+    &:focus,
+    .contact__icons:hover,
+    .contact__icons:focus {
+      color: var(--accent-text);
+      fill: var(--accent-text);
+}
 }
 
-.contact__icons {
-    margin-bottom: -1px;
-    fill: var(--secondary-text);
-    fill: currentColor;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header-contacts__info:hover,
-.header-contacts__info:focus,
-.contact__icons:hover,
-.contact__icons:focus {
-    color: var(--accent-text);
-    fill: var(--accent-text);
-}
+
